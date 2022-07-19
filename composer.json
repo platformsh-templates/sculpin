@@ -24,11 +24,16 @@
         ],
         "sculpin-watch": [
             "Composer\\Config::disableProcessTimeout",
-            "./vendor/bin/sculpin generate --watch --server"
+            "sculpin generate --watch --server"
         ],
         "yarn-watch": [
             "Composer\\Config::disableProcessTimeout",
             "yarn encore dev --watch"
         ]
+    },
+    "config": {
+        "allow-plugins": {
+            "sculpin/sculpin-theme-composer-plugin": true
+        }
     }
 }
